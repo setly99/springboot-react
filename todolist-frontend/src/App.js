@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import LoginContext from './components/LoginContext';
+import TodoListContext from './components/TodoListContext';
 import Login from './components/Login';
+import TodoList from './components/TodoList';
 import './App.css';
 
 function App() {
@@ -8,10 +9,14 @@ function App() {
   //로그인한 회원정보 저장
   const [loginMember, setLoginMember] = useState(null);
 
+  const [todoList, setTodoList] = useState([]);
+
   return (
-    <LoginContext.Provider value={ {loginMember, setLoginMember}}>
+    <TodoListContext.Provider value={ {loginMember, setLoginMember, todoList, setTodoList}}>
       <Login/>
-    </LoginContext.Provider>
+      <hr/>
+      { loginMember && ( <TodoList/> ) }
+    </TodoListContext.Provider>
   );
 }
 

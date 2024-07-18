@@ -1,9 +1,9 @@
 import React, {useContext, useState} from "react";
-import LoginContext from "./LoginContext";
+import TodoListContext from "./TodoListContext";
 
 const Login = () => {
 
-    const {loginMember, setLoginMember} = useContext(LoginContext);
+    const {loginMember, setLoginMember} = useContext(TodoListContext);
 
     const [id, setId] = useState('');
     const [pw, setPw] = useState('');
