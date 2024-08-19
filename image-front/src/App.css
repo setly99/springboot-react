@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.form-container{
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-container table{
+  width: 100%;
+}
+
+.form-container td{
+  padding: 10px;
+}
+
+/*form-container 내부 input label css*/
+input, textarea{
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+label{
+  font-size: 20px;
+}
+
+.file-label{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file-label input{
+  display: none;
+}
+
+button{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+button:hover, .file-label:hover{
+  background-color: #0056b3;
+  color: black;
+}
+
+.posts-container{
+  margin-top: 20px;
+}
+
+.post{
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
+
+}
+
+.post .images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post .images img{
+  max-width: 200px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}

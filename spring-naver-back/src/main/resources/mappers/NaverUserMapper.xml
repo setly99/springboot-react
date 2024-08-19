@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kh.mapper.NaverUserMapper">
+<insert id="insertNaverUser">
+	<!-- NaverUser Table에 네이버에서 가져온 값과 추가할 값을 작성해서 저장 -->
+	INSERT INTO naver_user
+	(id, email, nickname, name, gender, profile_image, password)
+	VALUES
+	(#{id},#{email},#{nickname},#{name},#{gender},#{profileImage},#{password})
+</insert>
+</mapper>

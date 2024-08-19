@@ -76,6 +76,8 @@ function App() {
     ``    : 글자 안에 특정 값을 변수명으로 취급해야 할 때
     ``안에서 ${변수명}
     */
+   //@DeleteMapping("/{id}"
+//    await axios.delete(`/users/${id}`);
     await axios.delete(`/users?id=${id}`);
     /**
     자바 컨트롤러에서 @DeleteMapping("/{id}") 파라미터에( @PathVariable int id) 작성

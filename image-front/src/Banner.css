@@ -1,0 +1,28 @@
+.banner{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner-image{
+    width: 100%;
+    height: 200px;
+}
+
+.banner-text{
+
+    /*
+    한 공간 안에서 한 가운데에 특정 값이 위치하길 원할 때 쓰는방법
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);//최종위치조정 나를감싸는div에서 내div한가운데
+    */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
