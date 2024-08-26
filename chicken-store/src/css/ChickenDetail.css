@@ -1,0 +1,77 @@
+.chicken-detail-container{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+
+    perspective: 1000px;
+}
+
+.chicken-detail-container h1{
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.chicken-detail-container p{
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.5;/*라인별 세로 크기 조정*/
+    margin: 10px 0;
+}
+
+.chicken-detail-container:hover{
+    /*transform: translateZ(80px) rotateY(50deg);*/
+    /*transform: translateY(80px);*/
+    /*transform: translateY(80px) translateX(80px);*/
+}
+
+.chicken-detail-container input,
+.chicken-detail-container textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;/*1em 16px*/
+
+    /*
+    box-sizing : 태그의 전체 넓이와 높이를 어떻게 계산할 것인지 설정
+        border-box : 넓이와 높이에 text,img,padding,border 포함 전체적 계산
+        content-box : 넓이와 높이가 text,img같은 내용만 계산, 유동적인 박스크기
+    */
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+}
+
+.chicken-detail-container input:hover,
+.chicken-detail-container textarea:hover{
+    transform: rotateY(30deg);
+}
+
+
+
+
+/*
+transform 효과 y(90)추가
+*/
+
+.chicken-detail-container button{
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, font-size 1s ease;
+}
+
+.chicken-detail-container button:hover{
+    background-color: #218838;
+    font-size: 20px;
+}

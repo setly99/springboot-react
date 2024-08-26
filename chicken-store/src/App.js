@@ -1,9 +1,12 @@
-import logo from './logo.svg';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './App.css';
 import ChickenList from './component/ChickenList';
 import ChickenForm from './component/ChickenForm';
+import ChickenDetail from './component/ChickenDetail';
 import Modal from './component/Modal';
 import { useState } from 'react';
+import MainRouter from './MainRouter';
+import SearchResult from './component/SearchResult';
 
 function App() {
 
@@ -14,14 +17,16 @@ function App() {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="app-container">
-      <h1>치킨가게메뉴관리</h1>
-      <ChickenList/>
-      <button onClick={openModal}>메뉴등록하기</button>
-      <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <ChickenForm/>
-      </Modal>
-    </div>
+    <Router>
+      
+      <Routes>
+        <Route path='/' element={<MainRouter/>} />
+        {/*<Route path='/' element={<ChickenList/>} />*/}
+        {/*Routes 안에는 Route로 설정된 태그만 들어올 수 있음 <MainRouter/> */}
+        <Route path='/chicken-detail/:id' element={<ChickenDetail/>} />
+        <Route path='/search' element={<SearchResult/>} />
+      </Routes>
+    </Router>
   );
 }
 

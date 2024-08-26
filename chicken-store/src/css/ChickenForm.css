@@ -31,9 +31,11 @@
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, font-size 0.1s;
 }
 
 .chickenform-container button:hover{
     background-color: #218838;
+    font-size: 30px;
+    font-weight: bold;
 }

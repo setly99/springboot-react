@@ -1,0 +1,99 @@
+.chicken-container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chicken-container h1{
+    text-align: center;
+    font-size: 2.5em;/*em:16px 2.5*16 : 40px*/
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.chicken-container ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.chicken-container li{
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.chicken-container li span{
+    font-size: 1.2em;
+    color: #555;
+}
+
+.chicken-container li:hover{
+    background-color: #f1f1f1;
+}
+
+/*홈페이지 태블릿으로 볼 때 반응형 처리*/
+@media (max-width:600px){
+
+    .chicken-container{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .chicken-container h1{
+        font-size: 2em;
+    }
+
+    .chicken-container li{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.chicken-item{
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chicken-name{
+    font-weight: bold;
+    font-size: 1.4em;
+    flex-basis: 25%;
+    color: #333;
+}
+
+.chicken-item:hover{
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+}
+
+.chicken-description{
+    font-size: 1.2em;
+    flex-basis: 35%;
+    color: #666;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.chicken-price{
+    font-size: 1.4em;
+    color: #28a745;
+    flex-basis: 20%;
+    text-align: center;
+
+}
+
+.detail-button{
+
+    transition: background-color 0.3s, font-size0.5s;
+
+}
+
+.detail-button:hover{
+
+}
