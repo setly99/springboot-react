@@ -2,6 +2,8 @@ import { useState } from "react";
 import Modal from "./Modal";
 import PizzaForm from "./PizzaForm";
 import { useNavigate } from "react-router-dom";
+import PizzaList from "./PizzaList";
+import '../css/PizzaRouter.css';
 
 
 const PizzaRouter = () => {
@@ -21,7 +23,7 @@ const PizzaRouter = () => {
 
     return(
         <div className="app-container">
-            <h1>치킨 메뉴 검색하기</h1>
+            <h1>피자 메뉴 검색하기</h1>
             <div className="search-container">
                 <input type="text" placeholder="검색할메뉴입력"
                 value={search}
@@ -29,10 +31,11 @@ const PizzaRouter = () => {
                 />
                 <button onClick={handleSearch}>검색하기</button>
             </div>
-            <button onClick={{openModal}}>메뉴 등록하기</button>
+            <button onClick={openModal}>메뉴 등록하기</button>
             <Modal isOpen={isModalOpen} onClose={closeModal}>
                 <PizzaForm/>
             </Modal>
+            <PizzaList/>
         </div>
     )
 }

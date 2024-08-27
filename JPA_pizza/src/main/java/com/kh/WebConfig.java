@@ -12,6 +12,7 @@ public class WebConfig implements WebMvcConfigurer{
 		registry.addMapping("/**")//front port로 가져오는 뒤 api url 주소 모두 허용
 		.allowedOrigins("http://localhost:3000")//주소와 port 허용
 		.allowedMethods("GET","POST","PUT","DELETE","OPTIONS")//DB와 주고받고 삭제하고 수정 등 모두 허용
+		.allowedHeaders("*")
 		.allowCredentials(true);//쿠키나 세션과 같은 자격 허용 "*" 사용 가능
 		
 	}

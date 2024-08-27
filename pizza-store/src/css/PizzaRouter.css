@@ -1,0 +1,59 @@
+/*
+container
+가로크기 800
+
+상화50 좌우 auto
+패딩20
+배경
+*/
+
+.search-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-container input{
+    width: 70%;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-container input:focus{
+    border-color: #ff4500;
+
+}
+
+.app-container button{
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    border-radius: 10px;
+    color: white;
+}
+
+.search-container button{
+    padding: 10px 20px;
+    background-color: #92e700;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover{
+    background-color: #037a25;
+}
+
+.modal-container button{
+    background-color: #ff5733;
+    padding: 5px 10px;
+}

@@ -1,16 +1,17 @@
-
+import '../css/PizzaRouter.css';
 
 const Modal = ({isOpen, onClose, children}) => {
     if(!isOpen){
         return null;
     }
     return(
-        <div>
-            <div>
+        <div className='modal-container'>
+            
                 <button onClick={onClose}>
-                    들어가기
+                    &times;
                 </button>
-            </div>
+                {children}
+            
         </div>
     )
 
